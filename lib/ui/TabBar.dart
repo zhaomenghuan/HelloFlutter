@@ -32,11 +32,11 @@ class _TabBarPage extends State<TabBarPage> {
         length: choices.length,
         child: new Scaffold(
           appBar: new AppBar(
-            primary: true,
             title: new Text("选项卡"),
+            centerTitle: true,
             bottom: new TabBar(
               isScrollable: true,
-              indicatorColor: Colors.yellowAccent,
+              indicatorColor: Colors.white,
               indicatorWeight: 2.0,
               indicatorSize: TabBarIndicatorSize.tab,
               tabs: choices.map((Choice c) {
@@ -45,7 +45,7 @@ class _TabBarPage extends State<TabBarPage> {
                   icon: new Icon(c.icon),
                 );
               }).toList(),
-            ),
+            )
           ),
           body: new TabBarView(
             children: choices.map((Choice c) {

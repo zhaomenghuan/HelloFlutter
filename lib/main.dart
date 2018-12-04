@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'ui.dart';
-import 'ui/Text.dart';
-import 'ui/Image.dart';
-import 'ui/Button.dart';
-import 'ui/ListView.dart';
-import 'ui/TabBar.dart';
-
 import 'api.dart';
-import 'api/device_info.dart';
 
 void main() => runApp(HelloFlutterApp());
 
@@ -30,14 +23,6 @@ class HelloFlutterState extends State<HelloFlutterApp> {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        routes: <String, WidgetBuilder>{
-          '/Text': (context) => TextPage(),
-          '/Image': (context) => ImagePage(),
-          '/Button': (context) => ButtonPage(),
-          '/ListView': (context) => ListViewPage(),
-          '/TabBar': (context) => TabBarPage(),
-          '/DeviceInfo': (context) => DeviceInfoPage(),
-        },
         // 路由首页
         home: new Builder(builder: (context) {
           return new Scaffold(

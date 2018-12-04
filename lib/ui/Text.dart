@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../BasePage.dart';
+
 class TextPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("文本"), centerTitle: true),
-      body: ListView(
-        padding: EdgeInsets.all(10),
-        children: <Widget>[
+    return BasePage(
+        title: '文本',
+        content: Wrap(spacing: 8.0, runSpacing: 4.0, children: <Widget>[
           Text('Hello world'),
           Text(
             "Hello world! I'm Jack. " * 4,
@@ -32,8 +32,6 @@ class TextPage extends StatelessWidget {
                 text: "https://flutter.io",
                 style: TextStyle(color: Colors.blue)),
           ]))
-        ],
-      ),
-    );
+        ]));
   }
 }

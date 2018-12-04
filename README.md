@@ -8,6 +8,10 @@ An example App for Flutter  Framework.
 
 官网：https://flutter.io/
 
+## 推荐
+
+https://flutterawesome.com/
+
 ## 工具
 
 Flutter WebIDE: https://flutterstudio.app/

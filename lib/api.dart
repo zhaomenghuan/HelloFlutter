@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:slide_transition_page_route/slide_transition_page_route.dart';
+
+import 'api/device_info.dart';
+import 'api/device_apps.dart';
 
 class APIPage extends StatelessWidget {
   var data = [
-    {"title": "TabBar", "subtitle": "选项卡", "routeName": "/TabBar"}
+    {"title": "DeviceApps", "subtitle": "设备应用", "routeName": "/api/DeviceApps"}
   ];
 
   @override
@@ -15,8 +19,8 @@ class APIPage extends StatelessWidget {
                 title: new Text('${data[index]['title']}'),
                 subtitle: new Text('${data[index]['subtitle']}'),
                 onTap: () {
-                  Navigator.pushNamed(
-                      context, '${data[index]['routeName']}');
+                  // Navigator.pushNamed(context, '${data[index]['routeName']}');
+                  Navigator.push(context, SlideLeftRoute(widget: DeviceAppsPage()));
                 });
           })
     );
