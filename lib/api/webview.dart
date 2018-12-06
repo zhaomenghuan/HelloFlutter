@@ -15,6 +15,6 @@ class WebViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BasePage(
         title: 'Webview',
-        content: Wrap());
+        body: Wrap());
   }
 }

@@ -10,7 +10,9 @@ An example App for Flutter  Framework.
 
 ## 推荐
 
-https://flutterawesome.com/
+- https://github.com/Solido/awesome-flutter
+- https://flutterawesome.com/
+- https://github.com/OpenFlutter
 
 ## 工具
 

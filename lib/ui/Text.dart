@@ -7,7 +7,7 @@ class TextPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BasePage(
         title: '文本',
-        content: Wrap(spacing: 8.0, runSpacing: 4.0, children: <Widget>[
+        body: Wrap(spacing: 8.0, runSpacing: 4.0, children: <Widget>[
           Text('Hello world'),
           Text(
             "Hello world! I'm Jack. " * 4,

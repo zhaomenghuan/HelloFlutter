@@ -4,6 +4,8 @@ import 'package:slide_transition_page_route/slide_transition_page_route.dart';
 import 'api/device_info.dart';
 import 'api/device_apps.dart';
 
+// https://github.com/facundomedica/fast_qr_reader_view
+
 class APIPage extends StatelessWidget {
   var data = [
     {"title": "DeviceApps", "subtitle": "设备应用", "routeName": "/api/DeviceApps"}

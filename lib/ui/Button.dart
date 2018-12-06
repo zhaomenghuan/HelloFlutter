@@ -8,7 +8,7 @@ class ButtonPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BasePage(
         title: '按钮',
-        content: Column(
+        body: Column(
           children: <Widget>[
             // 关闭按钮
             new CloseButton(),

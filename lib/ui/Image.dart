@@ -7,7 +7,7 @@ class ImagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BasePage(
         title: '图片',
-        content: ListView(
+        body: ListView(
           padding: EdgeInsets.all(10),
           children: <Widget>[
             Text('使用 Image.asset 从 asset 中加载图片'),
