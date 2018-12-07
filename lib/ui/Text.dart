@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../BasePage.dart';
+import 'package:hello_flutter/BasePage.dart';
 
 class TextPage extends StatelessWidget {
   @override

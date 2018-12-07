@@ -18,6 +18,7 @@ An example App for Flutter  Framework.
 - ListView(列表)
 - TabBar(选项卡)
 - Charts(图表)
+- GradientAppBar(渐变标题栏)
 
 ### API
 

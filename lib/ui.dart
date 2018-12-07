@@ -7,7 +7,7 @@ import 'ui/Button.dart';
 import 'ui/ListView.dart';
 import 'ui/TabBar.dart';
 import 'ui/Charts.dart';
-
+import 'ui/GradientAppBar.dart';
 
 class UIPage extends StatelessWidget {
   var data = [
@@ -16,7 +16,8 @@ class UIPage extends StatelessWidget {
     {"title": "Image", "subtitle": "图片"},
     {"title": "ListView", "subtitle": "列表"},
     {"title": "TabBar", "subtitle": "选项卡"},
-    {"title": "Charts", "subtitle": "图表"}
+    {"title": "Charts", "subtitle": "图表"},
+    {"title": "GradientAppBar", "subtitle": "渐变标题栏"}
   ];
 
   @override
@@ -51,6 +52,9 @@ class UIPage extends StatelessWidget {
                       break;
                     case "Charts":
                       widget = new ChartsPage();
+                      break;
+                    case "GradientAppBar":
+                      widget = new GradientAppBarPage();
                       break;
                   }
                   Navigator.push(context, SlideLeftRoute(widget: widget));
