@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../BasePage.dart';
+import 'package:hello_flutter/BasePage.dart';
 
-import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:dio/dio.dart';
 
 class ListViewPage extends StatefulWidget {
@@ -12,8 +11,6 @@ class ListViewPage extends StatefulWidget {
 
 class ListViewPageState extends State<ListViewPage> {
   Dio dio;
-  // RefreshController _refreshController;
-
   Response response;
   var data = [];
 
@@ -28,8 +25,6 @@ class ListViewPageState extends State<ListViewPage> {
   @override
   void initState() {
     _getDatas();
-
-    // _refreshController = new RefreshController();
     super.initState();
   }
 

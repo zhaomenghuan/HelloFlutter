@@ -16,9 +16,10 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  # iOS 风格图标
   cupertino_icons: ^0.1.2
+  # 设备信息
+  device_info: ^0.3.0
   # Toast 组件
   fluttertoast: ^2.1.2
   # 下拉刷新
@@ -31,6 +32,10 @@ dependencies:
   slide_transition_page_route: ^1.0.2
   # 网络请求
   dio: ^1.0.9
+  # render html tags
+  flutter_html: ^0.8.2
+  # charts(https://google.github.io/charts/flutter/gallery.html)
+  charts_flutter: ^0.5.0
 #  # webrtc
 #  flutter_webrtc: ^0.0.2
 

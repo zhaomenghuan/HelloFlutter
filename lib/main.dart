@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'ui.dart';
 import 'api.dart';
+import 'example.dart';
 
 void main() => runApp(HelloFlutterApp());
 
@@ -12,7 +13,7 @@ class HelloFlutterApp extends StatefulWidget {
 
 class HelloFlutterState extends State<HelloFlutterApp> {
   int _currentIndex = 0;
-  final List<Widget> _children = [UIPage(), APIPage()];
+  final List<Widget> _children = [UIPage(), APIPage(), ExamplePage()];
 
   @override
   Widget build(BuildContext context) {
@@ -37,9 +38,11 @@ class HelloFlutterState extends State<HelloFlutterApp> {
               },
               items: [
                 BottomNavigationBarItem(
-                    title: new Text("组件"), icon: new Icon(Icons.dashboard)),
+                    title: new Text("组件"), icon: new Icon(Icons.code)),
                 BottomNavigationBarItem(
-                    title: new Text("接口"), icon: new Icon(Icons.memory))
+                    title: new Text("接口"), icon: new Icon(Icons.memory)),
+                BottomNavigationBarItem(
+                    title: new Text("模板"), icon: new Icon(Icons.dashboard)),
               ],
             ),
           );

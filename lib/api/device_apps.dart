@@ -4,6 +4,9 @@ import 'dart:io';
 
 import 'package:flutter_appavailability/flutter_appavailability.dart';
 
+/**
+ * 设备应用
+ */
 class DeviceAppsPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => new AppPageState();
@@ -18,10 +21,6 @@ class AppPageState extends State<StatefulWidget> {
 
     if (Platform.isAndroid) {
       _installedApps = await AppAvailability.getInstalledApps();
-      print(await AppAvailability.checkAvailability("com.android.chrome"));
-      // Returns: Map<String, String>{app_name: Chrome, package_name: com.android.chrome, versionCode: null, version_name: 55.0.2883.91}
-      print(await AppAvailability.isAppEnabled("com.android.chrome"));
-      // Returns: true
     }
 
     setState(() {
@@ -34,7 +33,7 @@ class AppPageState extends State<StatefulWidget> {
     getApps();
 
     return new Scaffold(
-        appBar: new AppBar(title: new Text('应用管理'), centerTitle: true),
+        appBar: new AppBar(title: new Text('设备应用'), centerTitle: true),
         body: ListView.builder(
           itemCount: installedApps == null ? 0 : installedApps.length,
           itemBuilder: (context, index) {
@@ -43,14 +42,12 @@ class AppPageState extends State<StatefulWidget> {
               trailing: IconButton(
                   icon: const Icon(Icons.open_in_new),
                   onPressed: () {
-                    Scaffold.of(context).hideCurrentSnackBar();
                     AppAvailability.launchApp(installedApps[index]["package_name"]).then((_) {
                       print("App ${installedApps[index]["app_name"]} launched!");
                     }).catchError((err) {
                       Scaffold.of(context).showSnackBar(SnackBar(
                           content: Text("App ${installedApps[index]["app_name"]} not found!")
                       ));
-                      print(err);
                     });
                   }
               ),

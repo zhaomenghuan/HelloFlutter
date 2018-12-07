@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:fluttertoast/fluttertoast.dart';
-import '../BasePage.dart';
+import 'package:hello_flutter/BasePage.dart';
 
 class ButtonPage extends StatelessWidget {
   @override

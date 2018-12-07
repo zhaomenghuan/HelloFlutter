@@ -6,14 +6,17 @@ import 'ui/Image.dart';
 import 'ui/Button.dart';
 import 'ui/ListView.dart';
 import 'ui/TabBar.dart';
+import 'ui/Charts.dart';
+
 
 class UIPage extends StatelessWidget {
   var data = [
-    {"title": "Text", "subtitle": "文本", "routeName": "/ui/Text"},
-    {"title": "Image", "subtitle": "图片", "routeName": "/ui/Image"},
-    {"title": "Button", "subtitle": "按钮", "routeName": "/ui/Button"},
-    {"title": "ListView", "subtitle": "列表", "routeName": "/ui/ListView"},
-    {"title": "TabBar", "subtitle": "选项卡", "routeName": "/ui/TabBar"}
+    {"title": "Text", "subtitle": "文本"},
+    {"title": "Button", "subtitle": "按钮"},
+    {"title": "Image", "subtitle": "图片"},
+    {"title": "ListView", "subtitle": "列表"},
+    {"title": "TabBar", "subtitle": "选项卡"},
+    {"title": "Charts", "subtitle": "图表"}
   ];
 
   @override
@@ -45,6 +48,9 @@ class UIPage extends StatelessWidget {
                       break;
                     case "TabBar":
                       widget = new TabBarPage();
+                      break;
+                    case "Charts":
+                      widget = new ChartsPage();
                       break;
                   }
                   Navigator.push(context, SlideLeftRoute(widget: widget));
