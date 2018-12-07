@@ -32,7 +32,8 @@ An example App for Flutter  Framework.
 
 ## Document
 
-官网：https://flutter.io/
+- Official site：https://flutter.io/
+- China site: https://flutterchina.club/
 
 ## Tool
 
@@ -44,7 +45,3 @@ Flutter WebIDE: https://flutterstudio.app/
 - https://flutterawesome.com/
 - https://github.com/OpenFlutter
 - https://github.com/chinabrant/flutter_study
-
-## 文章
-
-- Flutter底部导航栏NavigationBar的几种实践：https://www.jianshu.com/p/3bf61b805d11
